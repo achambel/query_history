@@ -1,0 +1,43 @@
+#result{
+	margin-bottom: 40px;
+}
+
+.grid-resultado {
+	overflow-x: scroll;
+	padding-left: 0px;
+}
+
+.slider {
+	width: 15%;
+}
+
+#edtdeclaracao {
+	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #F5F5F5;
+    overflow: auto;
+    max-height: 30%;
+}
+
+footer div.input-group { 
+	width: 50%; 
+	float: left;
+}
+
+#result-history { 
+	clear: both;
+}
+
+.warn-hover:hover { 
+	background-color: #F2DEDE; 
+	text-decoration: line-through;
+}
+
+.info-hover:hover { 
+	background-color: #D9EDF7;
+}
