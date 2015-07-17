@@ -78,4 +78,11 @@ function toggleTable(options = {}) {
 	}
 };
 
+// submit query when pressed <ctrl>+<enter>
+document.addEventListener('keydown', function(e){ 
+	if(e.ctrlKey && e.keyCode == 13) { 
+		document.querySelector('#btnExecutar').click();
+	}
+});
+
 

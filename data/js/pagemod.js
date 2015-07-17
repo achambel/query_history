@@ -81,14 +81,13 @@ lbDb.textContent = 'Banco de dados:';
 options.appendChild(lbDb);
 options.appendChild(db);
 
-options.innerHTML += '<a class="btn btn-success btn-xs pull-right"> \
-                        <input name="btnExecutar" id="btnExecutar" alt="Executar" type="image"> \
-                      </a>';
-
-
 options.appendChild(document.createElement('hr'));
 
 document.form1.innerHTML += '<div class="btn-group form-group"> \
+                              <a class="btn btn-success btn-xs" title="Ctrl+Enter"> \
+                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> \
+                                <input name="btnExecutar" id="btnExecutar" alt="Executar" type="image"> \
+                              </a> \
                               <a class="btn btn-default btn-xs" id="saveOption"> \
                                 <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> \
                                  Salvar query \
