@@ -49,5 +49,10 @@ Temporary Items
 
 # Allow images
 !data/icon.png
+!data/img/install-step-1.png
+!data/img/install-step-2.png
+!data/img/install-step-3.png
+!data/img/install-step-4.png
+!data/img/install-step-5.png
 !data/img/before.png
 !data/img/after.png
