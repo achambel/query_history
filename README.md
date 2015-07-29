@@ -28,9 +28,6 @@
 ![](data/img/install-step-2.png?raw=true)
 - Clique no botão instalar agora
 ![](data/img/install-step-3.png?raw=true)
-- Após a instalação, configure a URL de execução direta do SIMPLES
-![](data/img/install-step-4.png?raw=true)
-![](data/img/install-step-5.png?raw=true)
 - Pronto!!! Toda vez que acessar a URL de execução direta do SIMPLES, o plugin entrará em ação!
 
 ### Colabore:
@@ -41,7 +38,6 @@
 ```
 $ cfx xpi --output-file xpi/query_history.xpi --update-link https://github.com/achambel/query_history/blob/master/xpi/query_history.xpi?raw=true --update-url https://raw.githubusercontent.com/achambel/query_history/master/query_history.update.rdf
 ```
-
 4. Clone o projeto:
 ```
 $ git clone https://github.com/achambel/query_history.git

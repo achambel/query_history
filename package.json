@@ -7,10 +7,5 @@
   "author": "Adriano Chambel Martins de Lima",
   "homepage": "https://github.com/achambel/query_history",
   "license": "MPL 2.0",
-  "version": "0.5",
-  "preferences": [{
-  	"name": "urlSimples",
-  	"title": "Informe a URL de execução direta do SIMPLES:",
-  	"type": "string"
-  	}]
+  "version": "0.6"
 }
