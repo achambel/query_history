@@ -17,7 +17,7 @@
 ![](data/img/before.png?raw=true)
 
 ### Página depois do plugin
-![](data/img/after.png?raw=true)
+![](data/img/demo.gif?raw=true)
 
 ### Instalação:
 

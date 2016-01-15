@@ -1,7 +1,7 @@
 // implements remove method on object type NodeList
 // E.g. >> document.querySelectorAll('.active').remove();
 // Remove all elements that contains active class
-NodeList.prototype.remove = function() { 
+NodeList.prototype.remove = function() {
 	[].forEach.call(this, function(obj) { obj.remove() });
 };
 
@@ -41,20 +41,20 @@ String.prototype.capitalize = function() {
 Date.prototype.toString = function() {
 	var date = new Date();
 	var day = ('00' + date.getDate()).substr(-2, 2);
-	var month = ('00' + date.getMonth()).substr(-2, 2);
+	var month = ('00' + date.getMonth() + 1).substr(-2, 2);
 	var year = ('00' + date.getFullYear()).substr(-2, 2);
 	var hours = ('00' + date.getHours()).substr(-2, 2);
 	var minutes = ('00' + date.getMinutes()).substr(-2, 2);
 	var seconds = ('00' + date.getSeconds()).substr(-2, 2);
 	var milliseconds = ('000' + date.getMilliseconds()).substr(-3, 3);
- 	
+
 	return day + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds + '.' + milliseconds;
 };
 
 // Return string length in MB from localStorage api
-Storage.prototype.quota = function(k) { 
+Storage.prototype.quota = function(k) {
 	var storage = localStorage.getItem(k);
-	if (storage) { 
+	if (storage) {
 		return (storage.length / 1024 / 1024); // MB
-	} 
+	}
 };
