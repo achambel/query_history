@@ -1,11 +1,11 @@
 // set font size from range
-document.querySelector('#font').addEventListener('input', function(){ 
+document.querySelector('#font').addEventListener('input', function(){
 	setUserConfig();
 	applyUserConfig();
 });
 
 // set clicked effect
-document.querySelector('#saveOption').addEventListener('click', function(){ 
+document.querySelector('#saveOption').addEventListener('click', function(){
 	this.classList.toggle('active') ;
 	setUserConfig();
 });
@@ -29,6 +29,9 @@ document.querySelector('#submit-search').addEventListener('submit', function(e) 
 	getQueries();
 	e.preventDefault();
 });
+
+// export as dml insert
+document.querySelector('#exportar-insert').addEventListener('click', exportInsert);
 
 // upload json button
 document.querySelector('#local-storage-upload').addEventListener('click', function(){
@@ -66,7 +69,7 @@ function setTextTransform(ele) {
 
 };
 
- 
+
 function toggleTable(options = {}) {
 	var target = document.querySelector('#result-history table');
 	target.classList.toggle('hidden');
@@ -79,8 +82,8 @@ function toggleTable(options = {}) {
 };
 
 // submit query when pressed <ctrl>+<enter>
-document.addEventListener('keydown', function(e){ 
-	if(e.ctrlKey && e.keyCode == 13) { 
+document.addEventListener('keydown', function(e){
+	if(e.ctrlKey && e.keyCode == 13) {
 		document.querySelector('#btnExecutar').click();
 	}
 });

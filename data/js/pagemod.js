@@ -138,6 +138,10 @@ footer.innerHTML = '<div class="input-group"> \
       </div> \
           <div class="pull-right"> \
             <input type="file" id="upload" accept="text/json" style="display:none;"> \
+            <a id="exportar-insert" class="btn btn-default btn-xs"> \
+              <span class="glyphicon glyphicon-menu-hamburger"></span> \
+                Exportar como INSERT \
+            </a> \
             <a id="local-storage-download"></a> \
             <a id="local-storage-json"></a> \
             <a id="local-storage-info"></a> \

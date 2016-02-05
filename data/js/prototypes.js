@@ -41,7 +41,7 @@ String.prototype.capitalize = function() {
 Date.prototype.toString = function() {
 	var date = new Date();
 	var day = ('00' + date.getDate()).substr(-2, 2);
-	var month = ('00' + date.getMonth() + 1).substr(-2, 2);
+	var month = ('00' + (date.getMonth() + 1)).substr(-2, 2);
 	var year = ('00' + date.getFullYear()).substr(-2, 2);
 	var hours = ('00' + date.getHours()).substr(-2, 2);
 	var minutes = ('00' + date.getMinutes()).substr(-2, 2);
@@ -57,4 +57,18 @@ Storage.prototype.quota = function(k) {
 	if (storage) {
 		return (storage.length / 1024 / 1024); // MB
 	}
+};
+
+// Return a array with text from elements in NodeList
+NodeList.prototype.textContent = function() {
+		textsArr = [];
+		[].forEach.call(this, function(obj) { textsArr.push(obj.textContent); });
+		return textsArr;
+};
+
+// Divide array in n slices.
+Array.prototype.each_slice = function (size, callback){
+  for (var i = 0, l = this.length; i < l; i += size){
+    callback.call(this, this.slice(i, i + size));
+  }
 };
