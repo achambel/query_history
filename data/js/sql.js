@@ -53,7 +53,7 @@ function exportInsert () {
     ele.setAttribute('download', `query_simples_insert_in_${tableName}_${Date.now()}.sql`);
 
     var data = generateInsert(tableName).join("\n");
-    ele.setAttribute('href', 'data:text/sql;charset=utf-8,' + encodeURI(data));
+    ele.setAttribute('href', 'data:text/sql;charset=utf-8,' + encodeURIComponent(data));
   }
   else {
     ele.removeAttribute('href');
