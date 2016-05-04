@@ -24,20 +24,20 @@
     max-height: 30%;
 }
 
-footer div.input-group { 
-	width: 50%; 
+footer div.input-group {
+	width: 50%;
 	float: left;
 }
 
-#result-history { 
+#result-history {
 	clear: both;
 }
 
-.warn-hover:hover { 
-	background-color: #F2DEDE; 
+.warn-hover:hover {
+	background-color: #F2DEDE;
 	text-decoration: line-through;
 }
 
-.info-hover:hover { 
+.info-hover:hover {
 	background-color: #D9EDF7;
 }

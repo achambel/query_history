@@ -8,6 +8,7 @@
 - Exporte suas queries para um arquivo.sql
 - Exporte suas queries em JSON  e utilize-as em outro browser com o Query History instalado
 - Gere DML INSERT com os resultados das consultas
+- Visualize linhas do resultado das consultas na vertical
 
 ### Shortcuts
 | Atalho     | Função          |

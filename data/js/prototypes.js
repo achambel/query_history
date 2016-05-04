@@ -72,3 +72,13 @@ Array.prototype.each_slice = function (size, callback){
     callback.call(this, this.slice(i, i + size));
   }
 };
+
+function Chamado(number) {
+  this.number = number,
+  this.description = null,
+  this.date = null,
+  this.success = null,
+  this.server = null,
+  this.instance = null,
+  this.database = null
+}
