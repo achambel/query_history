@@ -3,7 +3,7 @@
 ### Recursos
 
 - Visual moderno
-- Editor de query
+- Editor de query com autocomplete
 - Salve suas queries e recupere-as a um click
 - Exporte suas queries para um arquivo.sql
 - Exporte suas queries em JSON  e utilize-as em outro browser com o Query History instalado
@@ -14,6 +14,7 @@
 | Atalho     | Função          |
 |------------|-----------------|
 | Ctrl+Enter | Executa a query |
+| Ctrl+Space | Autocomplete    |
 
 ### Página antes do addon
 ![](data/img/before.png?raw=true)
