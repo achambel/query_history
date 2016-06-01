@@ -5,9 +5,13 @@ function isSaveQuery() {
 }
 
 function saveQuery () {
+	if(editor.getDoc().getValue().length == 0) {
+		return;
+	}
+
 	var newQuery = new Object();
 	newQuery.date = new Date().toString();
-	newQuery.query = document.querySelector('#edtdeclaracao').value;
+	newQuery.query = editor.getDoc().getValue();
 
 	var queries = new Array();
 
@@ -154,9 +158,7 @@ function showQueries(queryFiltered){
 };
 
 function addOnTextArea (text) {
-	var textarea = document.querySelector('#edtdeclaracao');
-	textarea.value = text;
-	textarea.focus();
+	editor.getDoc().setValue(text);
 }
 
 function uploadFile(){

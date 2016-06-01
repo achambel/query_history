@@ -3,9 +3,9 @@
   "title": "Query History",
   "id": "jid1-JkOjjvQEs1XrOA",
   "icon": "./data/icon.png",
-  "description": "Bem vindo ao Query History! Seu plugin realmente SIMPLES!",
-  "author": "Adriano Chambel Martins de Lima",
+  "description": "Bem vindo ao Query History! Seu addon realmente SIMPLES!",
+  "author": "Adriano Chambel Martins de Lima <acmlima.softweb@gmail.com>",
   "homepage": "https://github.com/achambel/query_history",
   "license": "MPL 2.0",
-  "version": "1.0"
+  "version": "1.1"
 }

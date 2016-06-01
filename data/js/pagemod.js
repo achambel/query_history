@@ -201,4 +201,3 @@ jq.onload = function() {
   document.body.appendChild(bjs);
 }
 
-applyUserConfig();

@@ -6,16 +6,18 @@ document.querySelector('#font').addEventListener('input', function(){
 
 // set clicked effect
 document.querySelector('#saveOption').addEventListener('click', function(){
-	this.classList.toggle('active') ;
+	this.classList.toggle('active');
 	setUserConfig();
+
+	if(this.classList.contains('active')) {
+		saveQuery();
+	}
+
 });
 
 // set text-transform style
 document.querySelectorAll('.text-transform').addEventListener('click', function(){
-	document.querySelectorAll('.text-transform').removeClass('active');
-	this.classList.add('active');
 	setTextTransform(this);
-	setUserConfig();
 });
 
 // implements in storage.js
@@ -51,20 +53,13 @@ window.addEventListener('resize', function () {
 });
 
 function setTextTransform(ele) {
-	var target = document.querySelector('#edtdeclaracao');
 
 	if(ele.id === 'capitalize') {
-		target.style.textTransform = ele.id;
-		target.value = target.value.capitalize();
+			editor.getDoc().setValue(editor.getDoc().getValue().capitalize());
 	} else if(ele.id === 'uppercase') {
-		target.style.textTransform = ele.id;
-		target.value = target.value.toUpperCase();
+			editor.getDoc().setValue(editor.getDoc().getValue().toUpperCase());
 	} else if(ele.id === 'lowercase') {
-		target.style.textTransform = ele.id;
-		target.value = target.value.toLowerCase();
-	}
-	else {
-		target.style.textTransform = 'none';
+			editor.getDoc().setValue(editor.getDoc().getValue().toLowerCase());
 	}
 
 };
