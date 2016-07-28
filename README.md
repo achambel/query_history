@@ -1,5 +1,9 @@
 # Bem vindo ao Query History! Seu addon realmente SIMPLES!
 
+### Projeto descontinuado porque foi migrado como extensão do Chrome
+- [Novo repositório git](https://github.com/achambel/chrome-query-history)
+- [Extensão na Chrome Web Store](https://chrome.google.com/webstore/detail/query-history/fndkobkoibdcgncjboobhfmkaikhndhg)
+
 ### Recursos
 
 - Visual moderno
